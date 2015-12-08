@@ -6,11 +6,60 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		87D1F4781C16B6290097CAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87D1F4551C16B60C0097CAC5 /* OSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 87D1F45D1C16B61D0097CAC5;
+			remoteInfo = AUI;
+		};
+		87D1F47A1C16B6290097CAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87D1F4551C16B60C0097CAC5 /* OSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 87D1F4671C16B61D0097CAC5;
+			remoteInfo = AUITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87D1F4551C16B60C0097CAC5 /* OSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OSX.xcodeproj; path = OSX/OSX.xcodeproj; sourceTree = "<group>"; };
+		87D1F4831C16B6A00097CAC5 /* AudioDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDevice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		87D1F4471C16B6040097CAC5 = {
 			isa = PBXGroup;
 			children = (
+				87D1F47C1C16B62D0097CAC5 /* Configurations */,
+				87D1F4751C16B6280097CAC5 /* Sources */,
 			);
+			sourceTree = "<group>";
+		};
+		87D1F4561C16B60C0097CAC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87D1F4791C16B6290097CAC5 /* AUI.framework */,
+				87D1F47B1C16B6290097CAC5 /* AUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87D1F4751C16B6280097CAC5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				87D1F4831C16B6A00097CAC5 /* AudioDevice.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		87D1F47C1C16B62D0097CAC5 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				87D1F4551C16B60C0097CAC5 /* OSX.xcodeproj */,
+			);
+			name = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -30,11 +79,34 @@
 			);
 			mainGroup = 87D1F4471C16B6040097CAC5;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 87D1F4561C16B60C0097CAC5 /* Products */;
+					ProjectRef = 87D1F4551C16B60C0097CAC5 /* OSX.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		87D1F4791C16B6290097CAC5 /* AUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AUI.framework;
+			remoteRef = 87D1F4781C16B6290097CAC5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		87D1F47B1C16B6290097CAC5 /* AUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AUITests.xctest;
+			remoteRef = 87D1F47A1C16B6290097CAC5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin XCBuildConfiguration section */
 		87D1F44C1C16B6040097CAC5 /* Debug */ = {
