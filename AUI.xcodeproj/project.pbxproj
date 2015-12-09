@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		87D1F4551C16B60C0097CAC5 /* OSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OSX.xcodeproj; path = OSX/OSX.xcodeproj; sourceTree = "<group>"; };
-		87D1F4831C16B6A00097CAC5 /* AudioDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDevice.swift; sourceTree = "<group>"; };
+		87D1F4831C16B6A00097CAC5 /* AudioDeviceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDeviceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -49,7 +49,7 @@
 		87D1F4751C16B6280097CAC5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				87D1F4831C16B6A00097CAC5 /* AudioDevice.swift */,
+				87D1F4831C16B6A00097CAC5 /* AudioDeviceProtocol.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";

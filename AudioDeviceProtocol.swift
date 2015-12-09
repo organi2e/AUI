@@ -7,7 +7,7 @@
 //
 
 import Foundation
-public protocol AudioDevice: CustomStringConvertible {
+internal protocol AudioDeviceProtocol: CustomStringConvertible {
 	func start<T> (let task:(UnsafeMutableBufferPointer<T>, UnsafeBufferPointer<T>)->Void) -> Bool
 	func stop ()
 
@@ -15,15 +15,15 @@ public protocol AudioDevice: CustomStringConvertible {
 	var manufacture: String {get}
 	
 	var running: Bool {get}
-	
+
 	var iChannel: Int{get set}
-	var iChannels: [Int]{get set}
+	var iChannels: [Int]{get}
 	var oChannel: Int{get set}
-	var oChannels: [Int]{get set}
+	var oChannels: [Int]{get}
 	
 	var sampleRate: Double{get set}
 	var sampleRates: [(Double, Double)]{get}
-	
+
 	var bufferSize: Int{get set}
 	var bufferSizes: [(Int, Int)]{get}
 	
@@ -32,4 +32,5 @@ public protocol AudioDevice: CustomStringConvertible {
 	
 	var bytePerChannel: Int{get set}
 	var bytePerChannels: [(Int, Int)]{get}
+	
 }

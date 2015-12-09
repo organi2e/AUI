@@ -10,8 +10,8 @@
 		87D1F4611C16B61D0097CAC5 /* AUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D1F4601C16B61D0097CAC5 /* AUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87D1F4681C16B61D0097CAC5 /* AUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D1F45D1C16B61D0097CAC5 /* AUI.framework */; };
 		87D1F46D1C16B61D0097CAC5 /* AUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D1F46C1C16B61D0097CAC5 /* AUITests.swift */; };
-		87D1F4821C16B6860097CAC5 /* CoreAudioDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D1F4811C16B6860097CAC5 /* CoreAudioDevice.swift */; };
-		87D1F4851C16B77E0097CAC5 /* AudioDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D1F4841C16B77E0097CAC5 /* AudioDevice.swift */; };
+		87D1F4821C16B6860097CAC5 /* AudioDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D1F4811C16B6860097CAC5 /* AudioDevice.swift */; };
+		87D1F48C1C17D96C0097CAC5 /* AudioDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D1F48B1C17D96C0097CAC5 /* AudioDeviceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +31,8 @@
 		87D1F4671C16B61D0097CAC5 /* AUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D1F46C1C16B61D0097CAC5 /* AUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUITests.swift; sourceTree = "<group>"; };
 		87D1F46E1C16B61D0097CAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87D1F4811C16B6860097CAC5 /* CoreAudioDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAudioDevice.swift; sourceTree = "<group>"; };
-		87D1F4841C16B77E0097CAC5 /* AudioDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AudioDevice.swift; path = ../../AudioDevice.swift; sourceTree = "<group>"; };
+		87D1F4811C16B6860097CAC5 /* AudioDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDevice.swift; sourceTree = "<group>"; };
+		87D1F48B1C17D96C0097CAC5 /* AudioDeviceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AudioDeviceProtocol.swift; path = ../../AudioDeviceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 		87D1F45F1C16B61D0097CAC5 /* AUI */ = {
 			isa = PBXGroup;
 			children = (
-				87D1F4841C16B77E0097CAC5 /* AudioDevice.swift */,
-				87D1F4811C16B6860097CAC5 /* CoreAudioDevice.swift */,
+				87D1F48B1C17D96C0097CAC5 /* AudioDeviceProtocol.swift */,
+				87D1F4811C16B6860097CAC5 /* AudioDevice.swift */,
 				87D1F4601C16B61D0097CAC5 /* AUI.h */,
 				87D1F4621C16B61D0097CAC5 /* Info.plist */,
 			);
@@ -199,8 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D1F4821C16B6860097CAC5 /* CoreAudioDevice.swift in Sources */,
-				87D1F4851C16B77E0097CAC5 /* AudioDevice.swift in Sources */,
+				87D1F4821C16B6860097CAC5 /* AudioDevice.swift in Sources */,
+				87D1F48C1C17D96C0097CAC5 /* AudioDeviceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +454,7 @@
 				87D1F4711C16B61D0097CAC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87D1F4721C16B61D0097CAC5 /* Build configuration list for PBXNativeTarget "AUITests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +463,7 @@
 				87D1F4741C16B61D0097CAC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
