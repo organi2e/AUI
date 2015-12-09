@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		87D1F4551C16B60C0097CAC5 /* OSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OSX.xcodeproj; path = OSX/OSX.xcodeproj; sourceTree = "<group>"; };
 		87D1F4831C16B6A00097CAC5 /* AudioDeviceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDeviceProtocol.swift; sourceTree = "<group>"; };
+		87D1F4BB1C17DE060097CAC5 /* iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOS.xcodeproj; path = iOS/iOS.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -57,9 +58,17 @@
 		87D1F47C1C16B62D0097CAC5 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				87D1F4BB1C17DE060097CAC5 /* iOS.xcodeproj */,
 				87D1F4551C16B60C0097CAC5 /* OSX.xcodeproj */,
 			);
 			name = Configurations;
+			sourceTree = "<group>";
+		};
+		87D1F4BC1C17DE060097CAC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +89,10 @@
 			mainGroup = 87D1F4471C16B6040097CAC5;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 87D1F4BC1C17DE060097CAC5 /* Products */;
+					ProjectRef = 87D1F4BB1C17DE060097CAC5 /* iOS.xcodeproj */;
+				},
 				{
 					ProductGroup = 87D1F4561C16B60C0097CAC5 /* Products */;
 					ProjectRef = 87D1F4551C16B60C0097CAC5 /* OSX.xcodeproj */;

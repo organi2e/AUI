@@ -31,6 +31,5 @@ internal protocol AudioDeviceProtocol: CustomStringConvertible {
 	var frameLengths: [(Int, Int)]{get}
 	
 	var bytePerChannel: Int{get set}
-	var bytePerChannels: [(Int, Int)]{get}
-	
+	var bytePerChannels: [(Int, Int)]{get}	
 }
